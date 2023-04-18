@@ -38,3 +38,9 @@ SELECT first_name, last_name, city_name
 FROM employee
 FULL JOIN city
 ON employee.city_id=city.city_id;
+
+
+SELECT first_name, last_name, city_name
+FROM employee
+CROSS JOIN city
+ON employee.city_id=city.city_id;
